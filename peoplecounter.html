@@ -2,25 +2,14 @@
 <html>
   <head>
     <title> People counter </title>
+    <link rel="stylesheet" href="peoplecounter-css.css"
   </head>
   <body>
-    <button onclick="incrementfunc()"> increment </button>
-    <button onclick="savingfunc()"> Save </button>
     <p id="countdisplay"> People count : 0 </p>
+    <button class="b1" onclick="incrementfunc()"> increment </button>
+    <button class="b2" onclick="savingfunc()"> Save </button>
+    
+
   </body>
-  <script>
-    let number=0;
-    function incrementfunc(){
-      number=number+1;
-      alert("the number of people is :" +number);
-      document.getElementById("countdisplay").textContent=" People count " +number;
-
-    }
-
-    function savingfunc(){
-      alert("you've saved the number of people");
-    }
-
-  </script>
-
+  <script src="peoplecounter-js.js"></script>
 </html>
