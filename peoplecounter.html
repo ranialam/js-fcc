@@ -1,12 +1,22 @@
 <!Doctype html>
 <html>
   <head>
-
+    <title> People counter </title>
   </head>
   <body>
-
+    <button onclick="incrementfunc"> increment </button>
+    <button onclick="savingfunc"> Save </button>
   </body>
   <script>
+    let number='';
+    function incrementfunc(){
+      number=number+1;
+      Alert("the number of people is :" +number);
+    }
+
+    function savingfunc(){
+      Alert("you've saved the number of people");
+    }
   </script>
-  
+
 </html>
